@@ -1,0 +1,24 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Make transfer between wallets{% endblock %}
+
+{% block body %}
+    <form method="POST" action="{{ url('transfer') }}">
+        <textarea name="json" id="json" style="width: 300px; height: 300px;">
+{
+    "sourceWallet": 1,
+    "destinationWallet": 3,
+    "amount": 100
+}
+        </textarea><br />
+        <input type="submit" value="Make transfer between wallets" />
+    </form>
+
+    <br />
+    <b>Test wallet data: </b><br/>
+    Wallet ID=1 with 50 USD balance <br />
+    Wallet ID=2 with 0 USD balance <br />
+    Wallet ID=4 with 1 USD balance <br />
+    <br />
+    Amount should be set in copecks.
+{% endblock %}

@@ -1,0 +1,8 @@
+index:
+    path: /
+    controller: App\Controller\IndexController::index
+    methods: GET
+transfer:
+    path: /transfer
+    controller: App\Controller\TransferController::create
+    methods: POST
