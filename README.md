@@ -8,8 +8,8 @@ It also should recreate the database and fill it by test data.
 
 #### How to run tests?
 1. Enter into php container `docker-compose exec php sh`.
-2. Run `./bin/phpunit`.
-It will execute two tests.
+2. Run `./run-tests.sh`.
+It will prepare database with fixtures and execute two tests.
 The first one is positive, which tries to transfer from one wallet to another twice.
 The first attempt should be successful and the second one should fail due to insufficient amount of money on source wallet.
 The second negative test makes different requests with missing input data.
