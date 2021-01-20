@@ -1,4 +1,8 @@
 .idea
+!.gitkeep
 symfony/vendor
 symfony/var/cache
 symfony/var/log
+logs/
+symfony/bin/.phpunit
+
